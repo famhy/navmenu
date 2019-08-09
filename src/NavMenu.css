@@ -1,0 +1,44 @@
+nav{
+    width: 30%;
+    border-bottom: 2px solid rgb(59, 131, 246);
+}
+
+
+.mainmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+    margin: 0;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: rgb(59, 131, 246);
+}
+li ul{
+    display: none;
+    flex-direction: column;
+   
+    position: absolute;
+    padding: 0;
+    border: 2px solid rgb(59, 131, 246);
+}
+
+li ul li{
+    margin-bottom: 5px;
+}
+
+.mainmenu li:hover > ul,
+.mainmenu li ul:hover {
+    display: flex;
+  flex-direction: column;
+  position: absolute;
+    
+
+}
